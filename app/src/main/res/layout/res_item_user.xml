@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
+    android:layout_height="165dp"
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,12 +21,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
+            android:layout_marginTop="32dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/title"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/perfil_imagem"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Nome Repositório" />
@@ -40,13 +41,13 @@
             android:maxLines="2"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/titulo"
+            app:layout_constraintEnd_toEndOf="@+id/titulo"
             app:layout_constraintStart_toStartOf="@id/titulo"
             app:layout_constraintTop_toBottomOf="@+id/titulo"
             tools:text="@tools:sample/lorem/random" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imageView"
+            android:id="@+id/perfil_imagem"
             android:layout_width="80dp"
             android:layout_height="85dp"
             android:layout_margin="9dp"
@@ -64,14 +65,15 @@
             android:layout_margin="9dp"
             android:layout_marginTop="9dp"
             android:ellipsize="end"
+            android:gravity="center"
             android:maxLines="1"
             android:textColor="@color/title"
             android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="@+id/perfil_imagem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/descricao"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/perfil_imagem"
             tools:text="username" />
 
         <TextView
@@ -81,6 +83,7 @@
             android:layout_margin="6dp"
             android:layout_marginTop="19dp"
             android:ellipsize="end"
+            android:gravity="center"
             android:maxLines="1"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -89,6 +92,28 @@
             app:layout_constraintStart_toStartOf="@+id/username"
             app:layout_constraintTop_toBottomOf="@+id/username"
             tools:text="Nome Sobrenome" />
+
+        <ImageView
+            android:id="@+id/git_icon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descricao"
+            app:srcCompat="@drawable/git" />
+
+        <ImageView
+            android:id="@+id/estrela_icon"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_margin="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/git_icon"
+            app:layout_constraintTop_toBottomOf="@+id/descricao"
+            app:layout_constraintVertical_bias="0.481"
+            app:srcCompat="@drawable/estrela" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
