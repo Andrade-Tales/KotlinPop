@@ -2,6 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="165dp"
     android:layout_margin="8dp"
@@ -17,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/titulo"
+            android:id="@+id/item_titulo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
@@ -34,16 +35,16 @@
             tools:text="Nome Repositório" />
 
         <TextView
-            android:id="@+id/descricao"
+            android:id="@+id/item_descricao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="2"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/titulo"
-            app:layout_constraintStart_toStartOf="@id/titulo"
-            app:layout_constraintTop_toBottomOf="@+id/titulo"
+            app:layout_constraintEnd_toEndOf="@+id/item_titulo"
+            app:layout_constraintStart_toStartOf="@id/item_titulo"
+            app:layout_constraintTop_toBottomOf="@+id/item_titulo"
             tools:text="@tools:sample/lorem/random" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -52,14 +53,14 @@
             android:layout_height="85dp"
             android:layout_margin="9dp"
             android:src="@drawable/icone_perfil"
-            app:layout_constraintBottom_toBottomOf="@+id/username"
+            app:layout_constraintBottom_toBottomOf="@+id/item_username"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.3" />
 
 
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/item_username"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="9dp"
@@ -72,12 +73,12 @@
             app:layout_constraintBottom_toBottomOf="@+id/perfil_imagem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/descricao"
+            app:layout_constraintStart_toEndOf="@+id/item_descricao"
             app:layout_constraintTop_toBottomOf="@+id/perfil_imagem"
             tools:text="username" />
 
         <TextView
-            android:id="@+id/nomeSobrenome"
+            android:id="@+id/nome_sobrenome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
@@ -87,10 +88,10 @@
             android:maxLines="1"
             android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="@+id/item_username"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/username"
-            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintStart_toStartOf="@+id/item_username"
+            app:layout_constraintTop_toBottomOf="@+id/item_username"
             tools:text="Nome Sobrenome" />
 
         <ImageView
@@ -100,7 +101,7 @@
             android:layout_marginStart="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descricao"
+            app:layout_constraintTop_toBottomOf="@+id/item_descricao"
             app:srcCompat="@drawable/git" />
 
         <ImageView
@@ -110,7 +111,7 @@
             android:layout_margin="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/git_icon"
-            app:layout_constraintTop_toBottomOf="@+id/descricao"
+            app:layout_constraintTop_toBottomOf="@+id/item_descricao"
             app:layout_constraintVertical_bias="0.481"
             app:srcCompat="@drawable/estrela" />
 

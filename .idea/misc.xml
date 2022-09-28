@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/andra/Developer/KotlinPop/app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
-        <entry key="..\:/Users/andra/Developer/KotlinPop/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/andra/Developer/KotlinPop/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/andra/Developer/KotlinPop/app/src/main/res/layout/card_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/andra/Developer/KotlinPop/app/src/main/res/layout/res_item_user.xml" value="0.33" />
       </map>
     </option>
